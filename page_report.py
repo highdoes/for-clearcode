@@ -1,4 +1,6 @@
-
+"""Niestety program dla ćwiczenia drugiego nie do końca spełnia swoje założenia, przede wszystkim dlatego, że nie udało
+mi się opanować regexa, a nie znalazłem sprytniejszego sposobu na wycięcie adresów. Tym samym program działa, ale widać jak daleko mu do
+perfekcji."""
 
 
 import os
@@ -27,6 +29,6 @@ with open('report.csv', 'w') as csv_file:
     writer = csv.writer(csv_file)
     for key, value in report.items():
        writer.writerow([key, value])
-dddsss=2
+
 
 
