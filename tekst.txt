@@ -1,0 +1,7 @@
+Microsoft said Tuesday it has uncovered new Russian hacking attempts targeting U.S. political groups ahead of the
+midterm elections.
+The company said that a hacking group tied to the Russian government created fake internet domains that appeared
+ to spoof two American conservative organizations: the Hudson Institute and the International Republican Institute.
+ Three other fake domains were designed to look as if they belonged to the U.S. Senate.
+ Microsoft didn't offer any further description of the fake sites.
+ The revelation came just weeks after a similar Microsoft discovery
