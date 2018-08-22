@@ -29,11 +29,24 @@ mejle = 'qasdasd@sfddas.vc  asdadsa@daadsa  asdadas@gfsdfsdsfs.pl  fffwfw@fsfd'
 
 print("Emails: ", len(re.findall("[\w._%+-]{1,20}@[\w.-]{2,20}\.[A-Za-z]{2,3}", mejle)))
 
-koty = 'cat cats'
+koty = "cat cats cat's"
 
-regex3 = re.compile("[cat]+s?")
+regex3 = re.compile("[cat]+['s]*")
 
 matches = re.findall(regex3, koty)
 
 for x in matches:
+    print(x)
+
+
+
+strin = "<name>keymap</name><name>default</name>"
+
+regex4 = re.compile("<name>.*</name>") #greedy
+regex5 = re.compile("<name>(.*?)</name>") #lazy
+matches2 = re.findall(regex4, strin)
+for x in matches2:
+    print(x)
+matches3 = re.findall(regex5, strin)
+for x in matches3:
     print(x)
