@@ -29,5 +29,11 @@ mejle = 'qasdasd@sfddas.vc  asdadsa@daadsa  asdadas@gfsdfsdsfs.pl  fffwfw@fsfd'
 
 print("Emails: ", len(re.findall("[\w._%+-]{1,20}@[\w.-]{2,20}\.[A-Za-z]{2,3}", mejle)))
 
+koty = 'cat cats'
 
+regex3 = re.compile("[cat]+s?")
 
+matches = re.findall(regex3, koty)
+
+for x in matches:
+    print(x)
