@@ -53,21 +53,21 @@ historia = {}
 adres = ["https://www.youtube.com/watch?v=a7nuYAk2xK8&list=PLGLfVvz_LVvTn3cK5e6LjhgGiSeVlIRwt&index=16",
          "youtube.com/watch?v=a7nuYAk2xK8&list=PLGLfVvz_LVvTn3cK5e6LjhgGiSeVlIRwt&index=16",
          "https://youtube.com/watch?v=a7nuYAk2xK8&list=PLGLfVvz_LVvTn3cK5e6LjhgGiSeVlIRwt&index=16",
-         "https://docs.python.org/3.7/library/re.html"]
+         "https://docs.python.org/3.7/library/re.html",
+         "https://www.google.pl/search?q=finding+dot+regex&oq=finding+dot+regex&aqs=chrome..69i57j0.3083j1j1&sourceid=chrome&ie=UTF-8"]
 for link in adres:
     if "www" in link and 'http' in link:
-        regex5 = re.compile(r"www.(.*?)/")
-    if 'http' in link:
+        regex5 = re.compile(r"www\.(.*?)/")
+    elif 'http' in link:
         regex5 = re.compile(r"://(.*?)/")
     else:
         regex5 = re.compile("(.*?)/")
     matches5 = re.findall(regex5, link)
     for x in matches5:
-        if "www" in x:
-            x = x.strip("www.")
         if x in historia.keys():
             historia[x] += 1
         else:
             historia[x] = 1
-for k,v in historia.items():
-    print(k,v)
+for k, v in historia.items():
+    print(k, v)
+
