@@ -61,7 +61,7 @@ for link in adres:
     elif 'http' in link:
         regex5 = re.compile(r"://(.*?)/")
     else:
-        regex5 = re.compile("(.*?)/")
+        regex5 = re.compile(r"(.*?)/")
     matches5 = re.findall(regex5, link)
     for x in matches5:
         if x in historia.keys():
@@ -70,4 +70,11 @@ for link in adres:
             historia[x] = 1
 for k, v in historia.items():
     print(k, v)
+
+
+x2 = "rat cat cat qat wat"
+regex7 = re.compile("r(\b\w+)\s+\1")
+matches5 = re.findall(regex7, x2)
+print(matches5)
+
 
