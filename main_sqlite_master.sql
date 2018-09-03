@@ -1,0 +1,1 @@
+INSERT INTO sqlite_master (type, name, tbl_name, rootpage, sql) VALUES ('table', 'employees', 'employees', 2, 'CREATE TABLE employees (id integer primary key, name text)');
